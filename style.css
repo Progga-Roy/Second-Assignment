@@ -107,6 +107,7 @@ li a{
 .influence-camera{
     width: 50%;
     margin-left: 80px;
+    margin-bottom: 40px;
 }
 
 /* first section image and details   style part end */
@@ -118,20 +119,21 @@ li a{
     margin-top: 12%;
 }
 .horizontal{
-    
+    margin-left: 5%;
     border: 1px solid #3A3A3A;
 }
 .logos-div{
    display: grid;
    grid-template-columns: repeat(7, 1fr);
    margin-top: 5%; 
-   margin-left: 2% ;
+   margin-left: 6% ;
  
 }
 
 .Horizontal-Rule{
     margin-top: 4%;
     border: 1px solid #3A3A3A;
+    margin-left: 5%;
 }
 
 /* companies logos style end */
@@ -521,7 +523,7 @@ hr{
     width: 80%;
 }
 .Justin{
-    margin-left: -2%;
+    margin-left: -2%; 
 }
 .popular-details{
     text-align: center;
