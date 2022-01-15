@@ -3,11 +3,10 @@
     margin: 0;
     padding: 0;
     font-family:'Poppins', sans-serif;
-    /* background: #FFFFFF; */
-   
     overflow-x: hidden;
 
 }
+/* header style start */
 header{
     margin-top: 40px;
 }
@@ -36,6 +35,11 @@ li a{
     color: #3A3A3A;
 
 }
+
+/* heading style end */
+
+
+/* first section image and details   style part start */
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -50,12 +54,12 @@ li a{
 }
 .influence-heading{
     width: 50%;
-    margin: 40px 3%;
+    margin: 30px 4%;
 }
 .first-heading{
     font-size: 35px;
     color: #3A3A3A;
-    
+    margin-left: 5px;
     
 }
 .influence-details p{
@@ -63,19 +67,35 @@ li a{
     letter-spacing: 2px;
     font-size: 16px;
     color: #3A3A3A;
+    margin-left: 10px;
 }
 .influence-button button{
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     margin-top: 15px;
-   color: #3A3A3A;
-   border-radius: 20px;
-   letter-spacing: 1px;
-   display: inline-block;
-   border: none;
-   outline: none;
+    margin-left: 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background:#3A3A3A;
+    color: #FFFFFF;
+    cursor: pointer;
+  
+  
    
+}
+.influence-button button:hover{
+   background: cadetblue;
+   color: #3A3A3A;
+   transform: scale(1);
+   transition: 0.5s ease-in-out;
+   outline: none;
+   border: none;
+   overflow-x: hidden;
+    
 }
   .right-arrow{
    float: right;
@@ -83,41 +103,49 @@ li a{
    margin-left: 5px;
 }
 
+
 .influence-camera{
     width: 50%;
-    margin-left: 70px;
-}
-#sequence{
-    order: 1;
+    margin-left: 80px;
 }
 
-/* .camera{
-    background-image: url(influencer-gear-main/influencer-gear-main/images/Circle\ design.svg);
- background-repeat: no-repeat;
- background-position: center;
-} */
+/* first section image and details   style part end */
+
+
+
+/* companies logos style start */
+.hr-rule{
+    margin-top: 12%;
+}
 .horizontal{
-    margin-top: 7%;
+    
+    border: 1px solid #3A3A3A;
 }
 .logos-div{
    display: grid;
    grid-template-columns: repeat(7, 1fr);
-   margin-top: 4%; 
+   margin-top: 5%; 
    margin-left: 2% ;
  
 }
 
 .Horizontal-Rule{
     margin-top: 4%;
+    border: 1px solid #3A3A3A;
 }
 
+/* companies logos style end */
 
+
+
+
+/* products card section and details style part start */
 .cards{
     margin-top: 15%;
 }
 .section-title{
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
     color: #3A3A3A;
     margin-bottom: 40px;
 }
@@ -125,7 +153,8 @@ li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap:30px;
-  padding: 20px 0;
+    padding: 20px 0;
+    margin-left: 30px;
 }
 .all-products{
     width: 329px;
@@ -158,7 +187,7 @@ span{
     font-size: 22px;
     color: #000000DE;
     font-family: Inter;
-   font-weight: normal;
+    font-weight: normal;
     margin-top: 10px;
 
 }
@@ -170,7 +199,7 @@ span{
 }
 
 .see-more-link {
-    font-size: 15px;
+ font-size: 15px;
  float: right;
  margin-right: 6%;
  margin-top: 3%;
@@ -182,8 +211,98 @@ span{
    text-decoration: none;
    padding: 20px 0;
    font-size: 18px;
-  color: brown;
+   color:orange;
+   letter-spacing: 1px;
 }
+/* products card section and details part end */
+
+
+
+/* bonus part start */
+
+main{
+    margin-top: 7%;
+}
+
+
+.popular-persons-title{
+   text-align: center;
+   margin-bottom: 5%;
+   color: #3A3A3A;
+}
+.influence-tag{
+    font-size: 30px;
+    color: orange;
+}
+.popular-person-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: hidden;
+    margin-left: 47px;
+    margin-top: 5%;
+}
+.most-popular{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.popular-img img{
+    width: 100%;
+    height: 300px;
+  
+   
+}
+.popular-details{
+    position: absolute;
+    display: none;
+    bottom:0;
+    color: rgb(51, 47, 42);
+    text-align: center;
+    
+}
+
+.popular-details h1{
+    font-size:20px ;
+    text-transform: uppercase;
+    background: rgb(14, 9, 9);
+    color: lightgoldenrodyellow;
+}
+.popular-details h3{
+    font-size:15px ;
+    margin-top: 10px;
+    color: orange;
+}
+.name{
+    color: rgb(223, 60, 60);
+}
+.popular-details p{
+   padding: 12px 0;
+   color: rgb(250, 241, 241);
+}
+.most-popular:hover .popular-img{
+    opacity: 0.8;
+}
+
+.most-popular:hover .popular-details{
+    display: block;
+    transform: scale(0.8);
+}
+.most-popular:hover{
+     transform: scale(1.1);
+     transition: 0.5s ease-in-out;
+     border-radius: 5px;
+  
+ }
+
+ /* bonus part end */
+
+
+
+
+/* foooter style start */
 
 .footer-div{
     text-align: center;
@@ -195,7 +314,7 @@ span{
     margin: 0 auto;
     color: #FFFFFF;
     background: #0A0826;
-    margin-top: 30px;
+    margin-top: 10%;
  
  
 }
@@ -214,8 +333,14 @@ span{
     text-decoration: none;
     font-size: 25px;
     margin-top: 20px;
-    gap: 15px;
+    gap: 20px;
+
  }
+
+ /* footer style end */
+
+
+ /* media query for responsive part start */
 
   @media (max-width:688px){
     .navigation .fa-bars{
@@ -224,13 +349,13 @@ span{
         margin-top: 20px;
     }
     .logo h1{
-        font-size: 20px;
+        font-size: 21px;
         margin-top: 20px;
         margin-left: 47px;
     
     }
     #cart-item{
-        font-size: 20px;
+        font-size: 21px;
         margin: 0;
         padding: 0;
     }
@@ -239,7 +364,7 @@ span{
     }
     .influence-div{
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
     }
     .influence-heading{
         width: 95%;
@@ -250,12 +375,12 @@ span{
     .first-heading{
         font-size: 20px;
         width: 100%;
-       white-space: wrap;
+        white-space: wrap;
     }
 
 .influence-camera{
     width: 100%;
-   margin: 0px;
+    margin: 0px;
 }
 .camera img{
     width: 90%;
@@ -263,7 +388,7 @@ span{
 
 .influence-camera{
     width: 100%;
-   margin: 0px;
+    margin: 0px;
 }
 hr{
     display: none;
@@ -292,6 +417,43 @@ hr{
     margin-top: 8px;
   
  }
+ .popular-person-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px ;
+    margin-left: 25px;
+ 
+}
+.popular-img img{
+    width: 80%;
+  
+  
+   
+}
+.influence-tag{
+    font-size: 22px;
+    margin-top: 30px;
+   
+}
+.popular-persons-title{
+    font-size: 22px;
+}
+.popular-details{
+   text-align: center;
+   padding: 0;
+}
+.popular-details h1{
+    font-size:17px ;
+    width: 75%;
+  
+}
+.popular-details h3{
+    font-size:13px ;
+    width: 75%;
+}
+.popular-details p{
+    width: 75%;
+}
 }  
 
 @media (min-width:689px) and (max-width:992px){
@@ -299,13 +461,11 @@ hr{
         font-size: 22px;
         margin-top: 20px;
         margin-left: 30px;
-        /* white-space: nowrap; */
-    
     }
     li a{
         
         margin-right: 20px;
-        font-size: 20px;
+        font-size: 16px;
        
     
     }
@@ -321,7 +481,7 @@ hr{
     .influence-camera{
         width: 50%;
         margin-left: 40px;
-        margin-top: 30px;
+        margin-top: 11%;
     }
     .camera img{
         width: 84%;
@@ -338,7 +498,7 @@ hr{
     .logos-div{
        
         grid-template-columns: repeat(3, 1fr);
-     
+        margin-left: 50px;
       
      }
      .main-div img{
@@ -347,29 +507,56 @@ hr{
     .products{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
-      margin-left: 47px;
+       margin-left: 47px;
        
    }
 
+   .popular-person-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:30px ;
+   
+}
+.popular-img img{
+    width: 80%;
+}
+.Justin{
+    margin-left: -2%;
+}
+.popular-details{
+    text-align: center;
+    padding: 0;
+ }
+ .popular-details h1{
+     font-size:17px ;
+     width: 75%;
+   
+ }
+ .popular-details h3{
+     font-size:13px ;
+     width: 75%;
+ }
+ .popular-details p{
+     width: 75%;
+ }
+}
+
+@media (min-width:993px) and (max-width:1300px){
+    .products{ 
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20px ;
+      margin-right: 17px;
+        
+    }
+    .popular-person-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px ;
+    }
 
 }
-/* @media (max-width:540px){
-    .camera img{
-        width: 75%;
-       
-    }
-    .influence-camera{
-        
-        margin-left: 40px;
-      
-    }
-    .products{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-     margin-left: 100px;
-        
-    }
-} */
+/* media query for responsive part end */
+
 
 
 
